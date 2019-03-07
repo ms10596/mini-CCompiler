@@ -1,77 +1,76 @@
-Token,Regexp
-AUTO,auto
-NEW,new
-EOF,0
-TRUE,true
-FALSE,false
-BREAK,break
-BOOL,bool
-CASE,case
-CHAR,char
-CONST,const
-CONTINUE,continue
-DEFAULT,default
-DO,do
-DOUBLE,double
-ELSE,else
-ENUM,enum
-EXTERN,extern
-FLOAT,float
-FOR,for
-GOTO,goto
-IF,if
-INT,int
-LONG,long
-REGISTER,register
-RETURN,return
-SHORT,short
-SIGNED,signed
-SIZEOF,sizeof
-STATIC,static
-STRUCT,struct
-SWITCH,switch
-TYPEDEF,typedef
-UNION,union
-UNSIGNED,unsigned
-VOID,void
-VOLATILE,volatile
-WHILE,while
-ID,[a-zA-Z_][a-zA-Z_0-9]*
-INTEGRAL_LITERAL,[0-9]+
-FLOAT_LITERAL,[0-9]+\.[0-9]+
-STRING_LITERAL,"\w*"
-CHAR_LITERAL,'\w'
-LEFT_CURLY_B,}
-RIGHT_CURLY_B,{
-LEFT_SQUARE_B,]
-RIGHT_SQUARE_B,[
-LEFT_ROUND_B,)
-RIGHT_ROUND_B,(
-COMMA,,
-SEMICOLON,;
-DOT,\.
-NOT,!
-ASSIGN_OPERATOR,=
-PREPROCESSOR,#
-BACKWARD_SLASH,\\
-MINUS,-
-PLUS,\+
-ASTERICK,\*
-DIVIDE,\/
-MOD,%
-LESSTHAN,>
-GREATERTHAN,<
-LESS_EQ,=>
-GREAT_EQ,=<
-EQUAL,==
-NOT_EQUAL,!=
-AND,&&
-OR,\|\|
-BITWISE_AND,&
-BITWISE_OR,\|
-BITWISE_XOR,\^
-LEFT_SHIFT,>>
-RIGHT_SHIFT,<<
-BITWISE_NOT,~
-MULTI_COMMENT,\/\*.+\*\/
-SINGLE_COMMENT,\/\/.+
+AUTO \bauto\b
+NEW \bnew\b
+EOF \b0\b
+TRUE \btrue\b
+FALSE \bfalse\b
+BREAK \bbreak\b
+BOOL \bbool\b
+CASE \bcase\b
+CHAR \bchar\b
+CONST \bconst\b
+CONTINUE \bcontinue\b
+DEFAULT \bdefault\b
+DO \bdo\b
+DOUBLE \bdouble\b
+ELSE \belse\b
+ENUM \benum\b
+EXTERN \bextern\b
+FLOAT \bfloat\b
+FOR \bfor\b
+GOTO \bgoto\b
+IF \bif\b
+INT \bint\b
+LONG \blong\b
+REGISTER \bregister\b
+RETURN \breturn\b
+SHORT \bshort\b
+SIGNED \bsigned\b
+SIZEOF \bsizeof\b
+STATIC \bstatic\b
+STRUCT \bstruct\b
+SWITCH \bswitch\b
+TYPEDEF \btypedef\b
+UNION \bunion\b
+UNSIGNED \bunsigned\b
+VOID \bvoid\b
+VOLATILE \bvolatile\b
+WHILE \bwhile\b
+ID [a-zA-Z_][a-zA-Z_0-9]*
+INTEGRAL_LITERAL [0-9]+
+FLOAT_LITERAL [0-9]+\.[0-9]+
+STRING_LITERAL ".*"
+CHAR_LITERAL '.'
+LEFT_CURLY_B }
+RIGHT_CURLY_B {
+LEFT_SQUARE_B ]
+RIGHT_SQUARE_B [
+LEFT_ROUND_B )
+RIGHT_ROUND_B (
+COMMA ,
+SEMICOLON ;
+DOT \.
+NOT !
+ASSIGN_OPERATOR =
+PREPROCESSOR #
+BACKWARD_SLASH \\
+MINUS -
+PLUS \+
+ASTERICK \*
+DIVIDE \/
+MOD %
+LESSTHAN >
+GREATERTHAN <
+LESS_EQ =>
+GREAT_EQ =<
+EQUAL ==
+NOT_EQUAL !=
+AND &&
+OR \|\|
+BITWISE_AND &
+BITWISE_OR \|
+BITWISE_XOR \^
+LEFT_SHIFT >>
+RIGHT_SHIFT <<
+BITWISE_NOT ~
+MULTI_COMMENT \/\*.+\*\/
+SINGLE_COMMENT \/\/.+

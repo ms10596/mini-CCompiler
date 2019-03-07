@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Load {
@@ -14,13 +15,14 @@ public class Load {
         }
         return all.toString();
     }
-    public static void loadClasses() throws FileNotFoundException {
+    public static HashMap<String, String> loadClasses() throws FileNotFoundException {
+        HashMap<String, String> regexDictionary = new HashMap<>();
         File inputFile = new File("dictionary.csv");
         Scanner scan = new Scanner(inputFile);
-        ArrayList<Token>tokens = new ArrayList<>();
         while(scan.hasNext()){
-            String[] line = scan.nextLine().split(",");
-           tokens.add(new Token());
+            String[] line = scan.nextLine().split(" ");
+            regexDictionary.put(line[0], line[1]);
         }
+        return regexDictionary;
     }
 }
