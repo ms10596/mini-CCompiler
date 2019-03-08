@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Visitor {
+class Visitor {
     private boolean[] visited;
 
     Visitor(int n) {

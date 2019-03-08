@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Load {
+class Load {
     static String loadRaw() throws FileNotFoundException {
         File inputFile = new File("main.c");
         Scanner scan = new Scanner(inputFile);
@@ -16,7 +16,7 @@ public class Load {
         return all.toString();
     }
 
-    public static ArrayList<Map.Entry> loadClasses() throws FileNotFoundException {
+    static ArrayList<Map.Entry> loadClasses() throws FileNotFoundException {
         ArrayList<Map.Entry> regexDictionary = new ArrayList<>();
         File inputFile = new File("dictionary.csv");
         Scanner scan = new Scanner(inputFile);

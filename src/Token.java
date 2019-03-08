@@ -1,8 +1,8 @@
 public class Token implements Comparable<Token> {
     private String type, value;
-    public int start;
+    private int start;
 
-    public Token(String type, String value, int start) {
+    Token(String type, String value, int start) {
         this.type = type;
         this.value = value;
         this.start = start;

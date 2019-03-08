@@ -3,7 +3,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 
 class Save {
-    public static void saveTokens(ArrayList<Token> tokens) throws Exception {
+    static void saveTokens(ArrayList<Token> tokens) throws Exception {
         PrintWriter printWriter = new PrintWriter(new File("main.tokens"));
         for (var token : tokens) {
             printWriter.write(token.toString());
