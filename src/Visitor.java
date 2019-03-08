@@ -1,17 +1,18 @@
 import java.util.Arrays;
 
 public class Visitor {
-    boolean[] visited;
+    private boolean[] visited;
 
-    public Visitor(int n) {
+    Visitor(int n) {
         this.visited = new boolean[n];
         Arrays.fill(this.visited, false);
     }
 
-    public boolean isVisited(int index) {
+    boolean isVisited(int index) {
         return visited[index];
     }
-    public void visit(int a, int b) {
+
+    void visit(int a, int b) {
         for (int i = a; i < b; i++) {
             visited[i] = true;
         }

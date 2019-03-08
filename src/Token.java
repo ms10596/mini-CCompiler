@@ -1,4 +1,4 @@
-public class Token {
+public class Token implements Comparable<Token> {
     private String type, value;
     public int start;
 
@@ -10,6 +10,11 @@ public class Token {
 
     @Override
     public String toString() {
-        return "<"+ type.toUpperCase() + ">:" + value+'\n';
+        return "<" + type.toUpperCase() + ">:" + value + '\n';
+    }
+
+    @Override
+    public int compareTo(Token token) {
+        return Integer.compare(this.start, token.start);
     }
 }

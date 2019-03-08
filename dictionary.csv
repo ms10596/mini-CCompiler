@@ -1,3 +1,5 @@
+SINGLE_COMMENT \/\/.+
+MULTI_COMMENT \/\*[.\n]+\*\/
 AUTO \bauto\b
 NEW \bnew\b
 EOF \b0\b
@@ -54,7 +56,6 @@ BACKWARD_SLASH \\
 MINUS -
 PLUS \+
 ASTERICK \*
-SINGLE_COMMENT \/\/.+
 DIVIDE \/
 MOD %
 LEFT_SHIFT >>
@@ -72,5 +73,4 @@ OR \|\|
 BITWISE_OR \|
 BITWISE_XOR \^
 BITWISE_NOT ~
-MULTI_COMMENT \/\*[.\n]+\*\/
-ID (?!auto\b|new\b|0\b|true\b|false\b|break\b|bool\b|case\b|char\b|const\b|continue\b|default\b|do\b|double\b|else\b|enum\b|extern\b|float\b|for\b|goto\b|if\b|int\b|long\b|register\b|return\b|short\b|signed\b|sizeof\b|static\b|struct\b|switch\b|typedef\b|union\b|unsigned\b|void\b|volatile\b|while\b|auto\b)\b[a-zA-Z_][a-zA-Z_0-9]*
+ID [a-zA-Z_][a-zA-Z_0-9]*
