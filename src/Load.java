@@ -1,7 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 public class Load {
     static String loadRaw() throws FileNotFoundException {
@@ -15,14 +15,15 @@ public class Load {
         System.out.println(all.toString());
         return all.toString();
     }
-    public static HashMap<String, String> loadClasses() throws FileNotFoundException {
-        HashMap<String, String> regexDictionary = new HashMap<>();
+    public static ArrayList<Map.Entry> loadClasses() throws FileNotFoundException {
+        ArrayList<Map.Entry> regexDictionary = new ArrayList<>();
         File inputFile = new File("dictionary.csv");
         Scanner scan = new Scanner(inputFile);
         while(scan.hasNext()){
             String[] line = scan.nextLine().split(" ");
-            regexDictionary.put(line[0], line[1]);
+            regexDictionary.add(Map.entry(line[0], line[1]));
         }
+        System.out.println(regexDictionary);
         return regexDictionary;
     }
 }

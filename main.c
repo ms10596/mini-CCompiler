@@ -1,3 +1,4 @@
+int intvalue = 10+5;
 bool isPowerOfTwo(int x)
 {
 // First x in the below expression is
